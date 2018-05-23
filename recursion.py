@@ -1,4 +1,8 @@
+message = "meet me for python"
+print (message)
 
+message2 = 'The clock strikes at midnight.'
+print (message2)
 # def sumlist(l):
 #     if l == []:
 #         return 0
@@ -17,14 +21,14 @@
 #         return piece[0] + getSum(piece[1:]) 
 # print getSum([1, 3, 4, 2, 5])
 
-def maxlist(l):
-    if len(l) == 1:
-        return l[0] 
-    else:
-        m = l[1:]
-        return m if m > l[0] else l[0]
+# def maxlist(l):
+#     if len(l) == 1:
+#         return l[0] 
+#     else:
+#         m = l[1:]
+#         return m if m > l[0] else l[0]
 
-print(maxlist([2,13,5,7,8]))
+# print(maxlist([2,13,5,7,8]))
 
         
         

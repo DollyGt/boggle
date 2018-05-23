@@ -30,4 +30,29 @@ class TestBoggle(unittest.TestCase):
             (2,5),
             (2,4),
             ]
-        self.assertEqual(neighbours, expected )
+        self.assertEqual(neighbours, expected)
+        
+        
+    # def test_all_grid_neighbours(self):
+    #     actual = all_grid_neighbours(make_grid(2, 2))
+    #     print("actual")
+    #     print(actual)
+        
+    #     expected = {
+    #         (0, 1): [(0, 0), (1, 0), (1, 1)],
+    #         (1, 1): [(0, 0), (1, 0), (0, 1)],
+    #         (0, 0): [(1, 0), (0, 1), (1, 1)],
+    #         (1, 0): [(0, 0), (0, 1), (1, 1)],
+    #     }
+    #     self.assertDictEqual(actual, expected)
+        
+        
+    def test_path_to_word(self):
+        grid = {
+            (0, 0): "C", (1, 0): "O",
+            (0, 1): "D", (1, 1): "E",
+        }
+        path = [(0,0), (1,0), (0,1)]
+        self.assertEqual(path_to_word(grid, path), "COD")
+
+
